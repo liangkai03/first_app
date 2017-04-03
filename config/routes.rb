@@ -1,4 +1,5 @@
-Rails.application.routes.draw do
-  resources :topics
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end
+# This file is used by Rack-based servers to start the application.
+
+require_relative 'config/environment'
+
+run Rails.application
