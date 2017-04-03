@@ -1,5 +1,5 @@
-Rails.application.routes.draw do# This file is used by Rack-based servers to start the application.
-  resources :topics
-  root 'topics#index'
+# This file is used by Rack-based servers to start the application.
 
-end
+require_relative 'config/environment'
+
+run Rails.application
